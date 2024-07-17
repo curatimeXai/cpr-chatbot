@@ -1,0 +1,29 @@
+version: "3.1"
+
+intents:
+  - greet
+  - symptoms
+  - what_actions
+
+responses:
+  utter_greet:
+  - text: "Hey! I'm chatbot"
+
+  utter_presentation:
+  - text: "I can answer questions cardial arrest like what are the symptoms or how to perform a cpr."
+
+  utter_symptoms_description:
+  - text: "A cardial arrest can sometimes be detected before it happening. 
+    The symptoms are : prolonged chest pain that can extend to the arms, a feeling of oppression,
+    thightness or even crushing.
+    Appart from these symptoms, a cardial arrest can also be preceded by palpitations or general malaise.
+    Otherwise, a person victim of cardial arrest will have the following symptoms :
+    the person will fall, lose consciousness, won't respond to any stimulations, when talking to her.
+    Its breathing will also be non-existent or very irregular."
+  
+  utter_cpr_steps:
+  - text: "In order to perform a correct cpr..."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

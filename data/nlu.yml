@@ -1,0 +1,91 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: symptoms
+  examples: |
+    - What are the symptoms
+    - Symptoms
+    - What symptoms
+    - How to detect heart problems
+    - How to know if heart problems
+    - What problems for heart disease
+    - Symptoms for heart disease
+    - Symptoms for cardial arrest
+    - Cardiac arrest symptoms
+    - Signs of cardiac arrest
+    - Symptoms of cardiac arrest
+    - Cardiac arrest signs
+    - Recognize cardiac arrest
+    - Identify cardiac arrest
+    - Cardiac arrest indicators
+    - What is cardiac arrest
+    - Cardiac arrest warning signs
+    - Symptoms of heart arrest
+    - What are the symptoms of cardiac arrest
+    - Can you tell me the signs of cardiac arrest
+    - How do I know if someone is having a cardiac arrest
+    - What symptoms should I look for in a cardiac arrest
+    - What happens when someone has a cardiac arrest
+    - How can I recognize cardiac arrest symptoms
+    - What are the warning signs of cardiac arrest
+    - How do I identify a cardiac arrest
+    - Could you list the symptoms of a cardiac arrest
+    - What does cardiac arrest look like
+    - What signs indicate cardiac arrest
+    - What should I watch out for in a cardiac arrest
+    - How can I tell if it's a cardiac arrest
+    - What are the early symptoms of a cardiac arrest
+    - Can you describe the symptoms of a cardiac arrest
+
+
+- intent: what_actions
+  examples: |
+    - What to do
+    - What is the procedure
+    - Save someone from heart problem
+    - Save someone from cardial arrest
+    - How to help someone from cardial arrest
+    - How to help someone from heart problems
+    - What is the procedure to follow
+    - What should I do
+    - Cardiac arrest help
+    - What to do
+    - Cardiac arrest steps
+    - Help for cardiac arrest
+    - Actions for cardiac arrest
+    - Respond to cardiac arrest
+    - Cardiac arrest first aid
+    - How to assist
+    - Cardiac arrest response
+    - Cardiac arrest procedures
+    - What should I do if someone has a cardiac arrest
+    - How do I help someone having a cardiac arrest
+    - What actions should I take during a cardiac arrest
+    - What steps are needed for cardiac arrest
+    - What is the first aid for cardiac arrest
+    - How can I assist someone in cardiac arrest
+    - What do I do during cardiac arrest
+    - What to do in case of cardiac arrest
+    - How to respond to cardiac arrest
+    - Actions to take for cardiac arrest
+    - What are the procedures for cardiac arrest
+    - How to act in a cardiac arrest situation
+    - What should be done during cardiac arrest
+    - How to handle cardiac arrest
+    - What measures to take for cardiac arrest
