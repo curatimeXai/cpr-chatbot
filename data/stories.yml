@@ -4,7 +4,8 @@ stories:
 - story: help detect cardial arrest
   steps:
   - intent: symptoms
-  - action: utter_symptoms_description
+  - action: utter_symptoms_description_one
+  - action: utter_symptoms_description_two
 
 - story: explain how to perform a correct cpr
   steps:
