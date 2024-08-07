@@ -3,7 +3,11 @@ version: "3.1"
 intents:
   - greet
   - symptoms
-  - what_actions
+  - how_to_react
+  - what_are_emergency_numbers
+  - abroad_emergency_numbers
+  - how_to_cpr
+  - what_are_pros_cpr
 
 responses:
   utter_greet:
@@ -23,8 +27,40 @@ responses:
     the person will fall, lose consciousness, won't respond to any stimulations, when talking to her.
     Its breathing will also be non-existent or very irregular."
 
+  utter_analyse_situation:
+  - text: "Start by checking your surrounding to see if you are alone or if anyone else is present around you.
+    If you are alone, start by calling the emergency services.
+    Otherwise, ask someone to call them instead and start performing CPR on the victim.
+    You can also ask anyone if there is a defibrillator and, if that is the case, ask them to bring immediatly."
+
+  utter_emergency_call_recs:
+  - text: "While calling the emergency services, you will be asked multiple questions by the operator. You need to answer clearly 
+    to help them understanding the situation so that they can send help quickly and tell you what to do.
+    Never end the call before the operator tells you to do it and describe all the symptoms that alerted you."
+
+  utter_emergency_numbers:
+  - text: "The emergency phone numbers depends on your country and continent. In the European Union, the 112 is available for 
+    any kind of emergency as the operator will help you and redirect you towards the right emergency services."
+  
+  utter_emergency_numbers_examples:
+  - text: "Otherwise, here are some phones numbers of some European countries :
+    - Germany: 110 for police and 112 globally
+    - France: 15 for the health emergency, 17 for the police, 18 for the firemen and 112 globally
+    - Spain: 112 globally
+    - Italy: 113 for police, 115 for fireman, 118 for sanitary services and 112 globally.
+    - Italy: 113 for police, 115 for fireman, 118 for sanitary services and 112 globally."
+
+  utter_know_foreign_emergency_numbers:
+  - text: "Before going abroad, it is highly recommended to check what are the locals emergency services and how to call them.
+    This will allow you to react quickly in case of an emergency, especially if you are alone.
+    Otherwise, in the European Union (and some other european countries), the 112 is the number to call if you have any doubt.
+    The operators from this number will help you and redirect you towards the right emergency services in your current country."
+
   utter_cpr_steps:
   - text: "In order to perform a correct cpr..."
+
+  utter_pros_cpr:
+  - text: "Performing CPR greatly increase the chances of survival of the victim."
 
 session_config:
   session_expiration_time: 60

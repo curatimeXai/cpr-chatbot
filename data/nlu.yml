@@ -53,8 +53,7 @@ nlu:
     - What are the early symptoms of a cardiac arrest
     - Can you describe the symptoms of a cardiac arrest
 
-
-- intent: what_actions
+- intent: how_to_react
   examples: |
     - What to do
     - What is the procedure
@@ -89,3 +88,141 @@ nlu:
     - What should be done during cardiac arrest
     - How to handle cardiac arrest
     - What measures to take for cardiac arrest
+
+- intent: what_are_emergency_numbers
+  examples: |
+    - emergency services phone number
+    - phone number emergency services
+    - phone number help
+    - call emergency services
+    - what is phone number emergency services
+    - what is emergency services phone number
+    - What is the phone number of the emergency services
+    - How do I call the emergency services
+    - Help phone number
+    - Contact emergency services
+    - Emergency call number
+    - Emergency services hotline
+    - Number for help
+    - Emergency hotline
+    - Call for emergency help
+    - Emergency services contact
+    - What’s the emergency number?
+    - How to reach emergency services?
+    - Help number
+    - Need emergency services number
+    - Emergency phone
+    - Who to call in an emergency?
+    - Emergency contact number
+    - Emergency services phone
+    - Phone emergency services
+    - How to call for emergency?
+    - Emergency number, please
+    - What number to call for emergency?
+    - Who to contact for emergency help?
+    - How to get emergency services?
+    - Phone number for urgent help
+    - Emergency contact
+    - Number for urgent services
+    - What’s the number for emergencies?
+    - How to dial emergency services?
+    - Contact number for emergency
+
+- intent: abroad_emergency_numbers
+  examples: |
+    - Emergency numbers abroad
+    - Help numbers overseas
+    - Emergency contact numbers in foreign country
+    - Abroad emergency contact
+    - Emergency services numbers internationally
+    - Phone numbers for emergency abroad
+    - How to call emergency services abroad?
+    - International emergency numbers
+    - Contact emergency services overseas
+    - Emergency phone numbers in other countries
+    - What are the emergency numbers abroad?
+    - Emergency help overseas
+    - Phone numbers for emergencies in foreign countries
+    - International help numbers
+    - How to reach emergency services in another country?
+    - Need emergency numbers abroad
+    - How to find emergency contacts overseas?
+    - Emergency hotline in foreign country
+    - Emergency services contact numbers internationally
+    - Numbers to call for help abroad
+    - What is the emergency number in [country]?
+    - How to get emergency help overseas?
+    - Who to contact for emergencies abroad?
+    - Need help numbers for foreign country
+    - Emergency contact info abroad
+    - Phone numbers for emergency assistance abroad
+    - Urgent help numbers in other countries
+    - International emergency contacts
+    - How to dial emergency services in another country?
+    - Emergency numbers when traveling
+
+- intent: how_to_cpr
+  examples: |
+    - How to perform CPR?
+    - Steps for CPR
+    - How to do chest compressions?
+    - What is the process for CPR?
+    - How do you do CPR?
+    - Guide to performing CPR
+    - How to give CPR?
+    - Instructions for CPR
+    - How to administer CPR?
+    - What is the correct way to do CPR?
+    - CPR procedure
+    - How to do CPR correctly?
+    - How can I perform CPR?
+    - How to start CPR?
+    - What are the CPR techniques?
+    - Steps to do CPR
+    - How to conduct CPR?
+    - How to save someone with CPR?
+    - CPR steps and techniques
+    - How should I do CPR?
+    - How to execute CPR?
+    - What to do for CPR?
+    - How to give chest compressions?
+    - Procedure for CPR
+    - How to handle CPR?
+    - Best way to do CPR
+    - How to perform chest compressions?
+    - Method for doing CPR
+    - What are the CPR procedures?
+    - How to help someone with CPR?
+
+- intent: what_are_pros_cpr
+  examples: |
+    - Benefits of doing CPR
+    - Why should I do CPR?
+    - Advantages of CPR
+    - Is CPR beneficial?
+    - Does CPR make a difference?
+    - What are the benefits of performing CPR?
+    - Positive effects of CPR
+    - How does CPR help?
+    - Why is CPR important?
+    - Is CPR effective?
+    - Does CPR improve survival rates?
+    - What are the good points of CPR?
+    - How can CPR save lives?
+    - Benefits of knowing CPR
+    - Why learn CPR?
+    - What are the positives of doing CPR?
+    - Does CPR really work?
+    - How effective is CPR?
+    - Why is CPR useful?
+    - What are the key benefits of CPR?
+    - How does CPR benefit the patient?
+    - Why perform CPR?
+    - Positive impacts of CPR
+    - Why is it good to know CPR?
+    - How does CPR increase survival?
+    - What are the pros of learning CPR?
+    - Is learning CPR worth it?
+    - Benefits of CPR in emergencies
+    - Why is CPR advantageous?
+    - Does CPR help in emergencies?

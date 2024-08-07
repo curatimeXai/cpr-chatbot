@@ -7,7 +7,29 @@ stories:
   - action: utter_symptoms_description_one
   - action: utter_symptoms_description_two
 
+- story: how to react when seeing a cardial arrest
+  steps:
+  - intent: how_to_react
+  - action: utter_analyse_situation
+  - action: utter_emergency_call_recs
+
+- story:
+  steps:
+  - intent: what_are_emergency_numbers
+  - action: utter_emergency_numbers
+  - action: utter_emergency_numbers_examples
+
+- story:
+  steps:
+  - intent: abroad_emergency_numbers
+  - action: utter_know_foreign_emergency_numbers
+
 - story: explain how to perform a correct cpr
   steps:
-  - intent: what_actions
+  - intent: how_to_cpr
   - action: utter_cpr_steps
+
+- story: explain what are the pros of doing cpr
+  steps:
+  - intent: what_are_pros_cpr
+  - action: utter_pros_cpr
