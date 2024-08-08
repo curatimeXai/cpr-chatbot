@@ -57,7 +57,22 @@ responses:
     The operators from this number will help you and redirect you towards the right emergency services in your current country."
 
   utter_cpr_steps:
-  - text: "In order to perform a correct cpr..."
+  - text: "Here are the steps to correctly perform CPR."
+
+  utter_cpr_steps_1:
+  - text: "Lay the person down on a hard surface and kneel next to them."
+  
+  utter_cpr_steps_2:
+  - text: "Place your hands one on top of the other, in the middle of her chest, between her two breasts, with your arms straight and then press with all the weight of your body."
+
+  utter_cpr_steps_3:
+  - text: "Apply strong pressure, pushing your hands 5 to 6 cm into the chest and raising them between each pressure."
+
+  utter_cpr_steps_4:
+  - text: "Perform the pressures at a steady pace (100 pressures per minute), counting to 30. After every 30 pressures, stop to give mouth-to-mouth only if you know how to do so."
+
+  utter_cpr_steps_5:
+  - text: "Continue until the defibrillator tells you to stop or until the emergency services arrive."
 
   utter_pros_cpr:
   - text: "Performing CPR greatly increase the chances of survival of the victim."

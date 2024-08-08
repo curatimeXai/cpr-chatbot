@@ -13,13 +13,13 @@ stories:
   - action: utter_analyse_situation
   - action: utter_emergency_call_recs
 
-- story:
+- story: how to know emergency numbers
   steps:
   - intent: what_are_emergency_numbers
   - action: utter_emergency_numbers
   - action: utter_emergency_numbers_examples
 
-- story:
+- story: how to know foreign emergency numbers
   steps:
   - intent: abroad_emergency_numbers
   - action: utter_know_foreign_emergency_numbers
@@ -28,6 +28,11 @@ stories:
   steps:
   - intent: how_to_cpr
   - action: utter_cpr_steps
+  - action: utter_cpr_steps_1
+  - action: utter_cpr_steps_2
+  - action: utter_cpr_steps_3
+  - action: utter_cpr_steps_4
+  - action: utter_cpr_steps_5
 
 - story: explain what are the pros of doing cpr
   steps:
