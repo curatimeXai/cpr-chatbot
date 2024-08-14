@@ -7,9 +7,13 @@ intents:
   - what_are_emergency_numbers
   - abroad_emergency_numbers
   - how_to_cpr
+  - how_to_mouth_to_mouth
   - what_are_pros_cpr
 
 responses:
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
   utter_greet:
   - text: "Hey! I'm chatbot"
 
@@ -73,6 +77,12 @@ responses:
 
   utter_cpr_steps_5:
   - text: "Continue until the defibrillator tells you to stop or until the emergency services arrive."
+    buttons:
+    - title: "How to do mouth-to-mouth"
+      payload: "/how_to_mouth_to_mouth"
+
+  utter_how_to_mouth_to_mouth:
+  - text: "How to do mouth-to-mouth"
 
   utter_pros_cpr:
   - text: "Performing CPR greatly increase the chances of survival of the victim."

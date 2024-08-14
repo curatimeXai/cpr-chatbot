@@ -193,6 +193,39 @@ nlu:
     - Method for doing CPR
     - What are the CPR procedures?
     - How to help someone with CPR?
+  
+- intent: how_to_mouth_to_mouth
+  examples: |
+    - How do I perform mouth-to-mouth?
+    - Steps for mouth-to-mouth resuscitation
+    - How to do mouth-to-mouth?
+    - How to give mouth-to-mouth?
+    - What is the technique for mouth-to-mouth?
+    - How to perform mouth-to-mouth resuscitation?
+    - Can you explain how to do mouth-to-mouth?
+    - Instructions for mouth-to-mouth
+    - How should I do mouth-to-mouth?
+    - How is mouth-to-mouth done?
+    - What are the steps for mouth-to-mouth resuscitation?
+    - Guide to mouth-to-mouth resuscitation
+    - How to give effective mouth-to-mouth?
+    - Proper way to do mouth-to-mouth
+    - How can I perform mouth-to-mouth correctly?
+    - What is the procedure for mouth-to-mouth?
+    - Can you guide me through mouth-to-mouth?
+    - How do you give mouth-to-mouth resuscitation?
+    - Best way to perform mouth-to-mouth
+    - What is the correct method for mouth-to-mouth?
+    - How to provide mouth-to-mouth in an emergency?
+    - What are the steps to give mouth-to-mouth?
+    - How to safely perform mouth-to-mouth?
+    - What is the mouth-to-mouth technique?
+    - Detailed steps for mouth-to-mouth resuscitation
+    - How to execute mouth-to-mouth resuscitation?
+    - What is the safest way to perform mouth-to-mouth?
+    - How do I ensure proper mouth-to-mouth technique?
+    - What should I know before performing mouth-to-mouth?
+    - How to do mouth-to-mouth in a CPR situation?
 
 - intent: what_are_pros_cpr
   examples: |

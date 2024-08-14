@@ -34,6 +34,11 @@ stories:
   - action: utter_cpr_steps_4
   - action: utter_cpr_steps_5
 
+- story: explain how to perform mouth-to-mouth
+  steps:
+  - intent: how_to_mouth_to_mouth
+  - action: utter_how_to_mouth_to_mouth
+
 - story: explain what are the pros of doing cpr
   steps:
   - intent: what_are_pros_cpr
