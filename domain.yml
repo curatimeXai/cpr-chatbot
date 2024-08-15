@@ -12,7 +12,7 @@ intents:
 
 responses:
   utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
 
   utter_greet:
   - text: "Hey! I'm chatbot"
