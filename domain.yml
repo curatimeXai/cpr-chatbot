@@ -8,6 +8,8 @@ intents:
   - abroad_emergency_numbers
   - how_to_cpr
   - how_to_mouth_to_mouth
+  - what_is_defibrillator
+  - how_to_defibrillator
   - what_are_pros_cpr
 
 responses:
@@ -80,9 +82,20 @@ responses:
     buttons:
     - title: "How to do mouth-to-mouth"
       payload: "/how_to_mouth_to_mouth"
+    - title: "How to use a defibrillator"
+      payload: "/how_to_defibrillator"
 
   utter_how_to_mouth_to_mouth:
   - text: "How to do mouth-to-mouth"
+
+  utter_what_is_defibrillator:
+  - text: "A defibrillator is a device that aims to restart the heart of someone victim of cardiac arrest."
+    buttons:
+    - title: "How to use a defibrillator"
+      payload: "/how_to_defibrillator"
+
+  utter_how_to_defibrillator:
+  - text: "How to use a defibrillator"
 
   utter_pros_cpr:
   - text: "Performing CPR greatly increase the chances of survival of the victim."

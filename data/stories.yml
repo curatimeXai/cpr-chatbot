@@ -39,6 +39,16 @@ stories:
   - intent: how_to_mouth_to_mouth
   - action: utter_how_to_mouth_to_mouth
 
+- story: explain what is a defibrillator
+  steps:
+  - intent: what_is_defibrillator
+  - action: utter_what_is_defibrillator
+
+- story: explain how to use a defibrillator
+  steps:
+  - intent: how_to_defibrillator
+  - action: utter_how_to_defibrillator
+
 - story: explain what are the pros of doing cpr
   steps:
   - intent: what_are_pros_cpr

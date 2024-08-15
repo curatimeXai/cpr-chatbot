@@ -227,6 +227,72 @@ nlu:
     - What should I know before performing mouth-to-mouth?
     - How to do mouth-to-mouth in a CPR situation?
 
+- intent: what_is_defibrillator
+  examples: |
+    - What is a defibrillator?
+    - Can you explain what a defibrillator is?
+    - What does a defibrillator do?
+    - How does a defibrillator work?
+    - What is the purpose of a defibrillator?
+    - Define defibrillator
+    - What exactly is a defibrillator?
+    - What is the function of a defibrillator?
+    - What is an AED defibrillator?
+    - What does a defibrillator look like?
+    - How would you describe a defibrillator?
+    - What is the role of a defibrillator in an emergency?
+    - What is the use of a defibrillator?
+    - What is the definition of a defibrillator?
+    - What does a defibrillator do in a cardiac arrest?
+    - Can you describe a defibrillator?
+    - What is the meaning of a defibrillator?
+    - How would you define a defibrillator?
+    - What is the purpose of using a defibrillator?
+    - What type of device is a defibrillator?
+    - What is the principle behind a defibrillator?
+    - How does an AED defibrillator differ from others?
+    - What are defibrillators used for?
+    - What is a defibrillator and how does it work?
+    - What does a defibrillator device do?
+    - What is a defibrillator used for in medical emergencies?
+    - What are the key features of a defibrillator?
+    - What is the concept of a defibrillator?
+    - Why do we use defibrillators?
+    - What does an automated defibrillator do?
+
+- intent: how_to_defibrillator
+  examples: |
+    - How do I use a defibrillator?
+    - Steps to use a defibrillator
+    - How to operate a defibrillator?
+    - What is the procedure for using a defibrillator?
+    - Can you explain how to use a defibrillator?
+    - How do you use a defibrillator in an emergency?
+    - Instructions for using a defibrillator
+    - How does a defibrillator work?
+    - What are the steps to use a defibrillator?
+    - How to correctly use a defibrillator?
+    - What should I do when using a defibrillator?
+    - How do I handle a defibrillator?
+    - How to use an AED defibrillator?
+    - What is the correct way to use a defibrillator?
+    - Can you guide me on how to use a defibrillator?
+    - How to use a defibrillator machine?
+    - What are the steps for using an AED?
+    - How do I safely use a defibrillator?
+    - How to apply a defibrillator on a patient?
+    - What is the method for using a defibrillator?
+    - How to operate an automated defibrillator?
+    - Can you teach me how to use a defibrillator?
+    - How do you perform defibrillation with a device?
+    - What are the guidelines for using a defibrillator?
+    - What are the key steps to operate a defibrillator?
+    - How to use a defibrillator on someone who collapsed?
+    - How does an AED defibrillator work?
+    - What are the basics of using a defibrillator?
+    - How to use a defibrillator in a cardiac arrest situation?
+    - What are the instructions for using a defibrillator effectively?
+
 - intent: what_are_pros_cpr
   examples: |
     - Benefits of doing CPR
