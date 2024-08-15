@@ -28,11 +28,6 @@ stories:
   steps:
   - intent: how_to_cpr
   - action: utter_cpr_steps
-  - action: utter_cpr_steps_1
-  - action: utter_cpr_steps_2
-  - action: utter_cpr_steps_3
-  - action: utter_cpr_steps_4
-  - action: utter_cpr_steps_5
 
 - story: explain how to perform mouth-to-mouth
   steps:
