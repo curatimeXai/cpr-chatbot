@@ -23,7 +23,7 @@ responses:
   - text: "I can answer questions about CPR, how to do it, what are the benefits of doing it, etc."
 
   utter_symptoms_description_one:
-  - text: "A cardiac arrest can sometimes be detected before it happening. 
+  - text: "A cardiac arrest can sometimes be detected before it happens. 
     The symptoms are : prolonged chest pain that can extend to the arms, a feeling of oppression,
     thightness or even crushing."
   
