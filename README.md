@@ -17,6 +17,8 @@ Before starting developing the chatbot, please read the [official Rasa documenta
 
 ## Deployment
 - Train the chatbot with the current training data: `rasa train`
+  - It is preferable to train the chatbot on the development machine to avoid running a resource hungry command.
+  - The new trained model will be added to the repo in the `models/` folder and will be automatically selected by the chatbot when running.
 - Start the container with: `docker compose up -d`
 
 ### Nginx example configuration
