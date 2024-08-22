@@ -19,6 +19,7 @@ Before starting developing the chatbot, please read the [official Rasa documenta
 - Train the chatbot with the current training data: `rasa train`
   - It is preferable to train the chatbot on the development machine to avoid running a resource hungry command.
   - The new trained model will be added to the repo in the `models/` folder and will be automatically selected by the chatbot when running.
+- Clone the repo on the server: `git clone https://github.com/curatimeXai/cpr-chatbot.git`
 - Start the container with: `docker compose up -d`
 
 ### Nginx example configuration
