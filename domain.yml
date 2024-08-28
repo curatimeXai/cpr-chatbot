@@ -2,6 +2,7 @@ version: "3.1"
 
 intents:
   - greet
+  - thank_you
   - symptoms
   - how_to_react
   - what_are_emergency_numbers
@@ -17,10 +18,10 @@ responses:
   - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
 
   utter_greet:
-  - text: "Hey! I'm chatbot"
+  - text: "Hey! I'm a chatbot that can answer questions about CPR, how to do it, what are the benefits of doing it, etc."
 
-  utter_presentation:
-  - text: "I can answer questions about CPR, how to do it, what are the benefits of doing it, etc."
+  utter_thank_back:
+  - text: "You're welcome! I'm glad I could help you!"
 
   utter_symptoms_description_one:
   - text: "A cardiac arrest can sometimes be detected before it happens. 

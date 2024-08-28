@@ -10,4 +10,8 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
-  - action: utter_presentation
+
+- rule: Respond to thanks
+  steps:
+  - intent: thank_you
+  - action: utter_thank_back

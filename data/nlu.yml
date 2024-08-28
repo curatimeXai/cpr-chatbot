@@ -17,6 +17,14 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: thank_you
+  examples: |
+    - thank you
+    - thanks
+    - thank you for your help
+    - you've been of great help
+    - that was great, thanks
+
 - intent: symptoms
   examples: |
     - What are the symptoms
