@@ -3,6 +3,7 @@ version: "3.1"
 intents:
   - greet
   - thank_you
+  - what_can_do
   - symptoms
   - how_to_react
   - what_are_emergency_numbers

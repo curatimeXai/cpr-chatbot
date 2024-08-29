@@ -19,11 +19,69 @@ nlu:
 
 - intent: thank_you
   examples: |
-    - thank you
-    - thanks
-    - thank you for your help
-    - you've been of great help
-    - that was great, thanks
+    - thank you so much
+    - thanks a lot
+    - many thanks
+    - I appreciate it
+    - thanks for everything
+    - I really appreciate your help
+    - you’re the best, thanks
+    - thanks for your assistance
+    - I’m grateful, thank you
+    - thanks, that was helpful
+    - thank you, I needed that
+    - thanks for the support
+    - you’ve been very helpful, thanks
+    - I owe you one, thanks
+    - cheers, mate
+    - thank you, I couldn’t have done it without you
+    - thanks for your time
+    - I appreciate your help, thank you
+    - you’ve been a great help, thanks
+    - thanks a bunch
+    - thanks, you’re awesome
+    - you’ve helped me a lot, thank you
+    - thanks, that means a lot
+    - thank you for your guidance
+    - you’re amazing, thanks
+    - much appreciated
+    - thank you, that was exactly what I needed
+    - thanks, I’m grateful
+    - thank you kindly
+    - you’re a lifesaver, thanks
+
+- intent: what_can_do
+  examples: |
+    - What are your capabilities?
+    - What services do you offer?
+    - How can you help me?
+    - What tasks can you perform?
+    - What can you help me with?
+    - What kind of assistance can you provide?
+    - Tell me what you can do
+    - What are you here for?
+    - How can you assist me?
+    - What can you help me solve?
+    - What is your purpose?
+    - How can you be useful to me?
+    - What’s your function?
+    - What problems can you solve?
+    - What support can you give me?
+    - Can you tell me what you’re capable of?
+    - What skills do you have?
+    - How can you be of service?
+    - What can I ask you to do?
+    - What features do you have?
+    - What can you offer?
+    - What’s your specialty?
+    - How can you make my life easier?
+    - What kind of help can I expect from you?
+    - What solutions can you provide?
+    - What’s your main function?
+    - How can you assist me today?
+    - What do you do?
+    - What’s your main job?
+    - What are you programmed to do?
 
 - intent: symptoms
   examples: |
