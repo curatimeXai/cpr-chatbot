@@ -163,3 +163,8 @@ cython_debug/
 
 .rasa/
 cache/
+
+# Used to test the bot during development.
+index.html
+
+express_api/node_modules/

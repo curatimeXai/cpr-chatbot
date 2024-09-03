@@ -2,8 +2,6 @@ services:
   rasa:
     container_name: crp_chatbot
     image: rasa/rasa:3.6.20-full
-    ports:
-      - 5005:5005
     volumes:
       - ./:/app
     command:
@@ -11,3 +9,29 @@ services:
       - --enable-api
       - --cors
       - "*"
+  
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    env_file:
+      - ./docker/postgres/.env
+    volumes:
+      - ./docker/postgres:/docker-entrypoint-initdb.d
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  express_api:
+    container_name: express_api
+    build:
+      context: ./express_api
+    env_file:
+      - ./docker/express_api/.env
+    ports:
+      - "5005:5054"
+    volumes:
+      - ./express_api:/app
