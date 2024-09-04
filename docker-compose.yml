@@ -9,7 +9,7 @@ services:
       - --enable-api
       - --cors
       - "*"
-  
+
   db:
     image: postgres
     restart: always
@@ -21,12 +21,9 @@ services:
 
   analytics:
     container_name: analytics
-    build:
-      context: ./analytics
+    build: ./analytics
     env_file:
       - ./docker/analytics/.env
       - ./docker/postgres/.env
     ports:
       - "5005:5054"
-    volumes:
-      - ./analytics:/app
