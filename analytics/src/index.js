@@ -5,12 +5,14 @@
  */
 
 import axios from 'axios';
+import cors from "cors";
 import express from 'express';
 import { addUserQuestion, updateBotAnswerCount } from './database.js';
 
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
 	res.send("Chatbot API");
