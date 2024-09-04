@@ -4,11 +4,20 @@
  * to display analytics about the bot's use.
  */
 
-import axios from 'axios';
+// import axios from 'axios';
 import cors from "cors";
 import express from 'express';
-import { addUserQuestion, updateBotAnswerCount } from './database.js';
 
+console.log()
+
+
+const { spawn } = require("child_process");
+
+const ls = spawn("ls", ["-la"]);
+
+ls.stdout.on("data", data => {
+    console.log(`stdout: ${data}`);
+});
 
 const app = express();
 app.use(express.json());
@@ -20,12 +29,12 @@ app.get("/", (req, res) => {
 
 app.post('/ask_chatbot', async (req, res) => {
 	try {
-		const chatbotResponse = await axios.post("http://rasa:5005/webhooks/rest/webhook", req.body);
-		
-		let answer_id = await updateBotAnswerCount(chatbotResponse.data[0].text);
-		await addUserQuestion(req.body.message, answer_id);
+		// const chatbotResponse = await axios.post("http://rasa:5005/webhooks/rest/webhook", req.body);
+		return;
+		// let answer_id = await updateBotAnswerCount(chatbotResponse.data[0].text);
+		// await addUserQuestion(req.body.message, answer_id);
 
-		return res.json(chatbotResponse.data);
+		// return res.json(chatbotResponse.data);
 	}
 	catch (err) {
 		res.status(500).json({

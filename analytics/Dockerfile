@@ -1,9 +1,9 @@
-FROM node:16
+FROM node:22
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY . .
+COPY src/ ./src
 
 EXPOSE 5054
 CMD ["npm", "start"]
