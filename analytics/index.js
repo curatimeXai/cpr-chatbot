@@ -18,8 +18,16 @@ app.get("/", (req, res) => {
 })
 
 app.post('/ask_chatbot', async (req, res) => {
-	const chatbotResponse = await axios.post("http://rasa:5005/webhooks/rest/webhook", req.body);
-	res.json(chatbotResponse.data);
+	try {
+		const chatbotResponse = await axios.post("http://rasa:5005/webhooks/rest/webhook", req.body);
+		return res.json(chatbotResponse.data);
+	}
+	catch (err) {
+		res.status(500).json({
+			message: "Error while sending request to chatbot.",
+			error: err.message,
+		})
+	}
 });
 
 app.listen(process.env.API_PORT, () => {
