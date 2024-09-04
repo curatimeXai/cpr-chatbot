@@ -5,10 +5,9 @@
  */
 
 import axios from 'axios';
-import dotenv from 'dotenv';
 import express from 'express';
+import { addUserQuestion, updateBotAnswerCount } from './database.js';
 
-dotenv.config({ path: '../docker/express_api/.env' });
 
 const app = express();
 app.use(express.json());
@@ -20,6 +19,10 @@ app.get("/", (req, res) => {
 app.post('/ask_chatbot', async (req, res) => {
 	try {
 		const chatbotResponse = await axios.post("http://rasa:5005/webhooks/rest/webhook", req.body);
+		
+		let answer_id = await updateBotAnswerCount(chatbotResponse.data[0].text);
+		await addUserQuestion(req.body.message, answer_id);
+
 		return res.json(chatbotResponse.data);
 	}
 	catch (err) {

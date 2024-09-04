@@ -25,13 +25,14 @@ services:
     ports:
       - 8080:8080
 
-  express_api:
-    container_name: express_api
+  analytics:
+    container_name: analytics
     build:
-      context: ./express_api
+      context: ./analytics
     env_file:
-      - ./docker/express_api/.env
+      - ./docker/analytics/.env
+      - ./docker/postgres/.env
     ports:
       - "5005:5054"
     volumes:
-      - ./express_api:/app
+      - ./analytics:/app
