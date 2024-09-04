@@ -24,6 +24,11 @@ stories:
   - intent: abroad_emergency_numbers
   - action: utter_know_foreign_emergency_numbers
 
+- story: explain what is cpr
+  steps:
+  - intent: what_is_cpr
+  - action: utter_cpr_explanation
+
 - story: explain how to perform a correct cpr
   steps:
   - intent: how_to_cpr

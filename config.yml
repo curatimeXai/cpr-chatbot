@@ -38,4 +38,4 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.85
+    threshold: 0.98

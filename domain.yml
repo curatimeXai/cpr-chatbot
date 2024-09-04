@@ -8,6 +8,7 @@ intents:
   - how_to_react
   - what_are_emergency_numbers
   - abroad_emergency_numbers
+  - what_is_cpr
   - how_to_cpr
   - how_to_mouth_to_mouth
   - what_is_defibrillator
@@ -63,6 +64,11 @@ responses:
     This will allow you to react quickly in case of an emergency, especially if you are alone.
     Otherwise, in the European Union (and some other european countries), the 112 is the number to call if you have any doubt.
     The operators from this number will help you and redirect you towards the right emergency services in your current country."
+
+  utter_cpr_explanation:
+  - text: "CPR, or Cardiopulmonary Resuscitation, is an emergency procedure used when the heart stops beating.
+  It involves chest compressions and sometimes rescue breaths to maintain blood flow and oxygen to the brain and heart until medical help arrives.
+  Its goal is to keep the person alive during cardiac arrest or other emergencies."
 
   utter_cpr_steps:
   - text: "Step 1: start by laying down the victim on a hard surface and kneel next to them.\n\n

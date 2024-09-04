@@ -12,6 +12,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Environment variables
+Copy the `.env.examples` files in `docker/` to set your environment variables.
+
 ### Chatbot development
 Before starting developing the chatbot, please read the [official Rasa documentation](https://rasa.com/docs/rasa/).  
 
@@ -44,18 +47,3 @@ server {
     }
 }
 ```
-
-### Widget configuration
-Here is an example of the widget to add to the website:
-```html
-<div id="rasa-chat-widget" 
-	data-websocket-url="http://localhost:5005/socket.io"
-	data-primary="#CC1214"
-	data-primary-highlight="#D02526"
-	data-avatar-background="#CC1214">
-</div>
-<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
-```
-
-Set the `data-websocket-url` attribute to the correct URL.  
-Example: `http://rasa.your_domain.com/socket.io`

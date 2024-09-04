@@ -227,6 +227,39 @@ nlu:
     - How to dial emergency services in another country?
     - Emergency numbers when traveling
 
+- intent: what_is_cpr
+  examples: |
+    - What is CPR
+    - Can you explain what CPR is
+    - What does CPR stand for
+    - What is the purpose of CPR
+    - Define CPR
+    - How does CPR work
+    - What exactly is CPR
+    - What does CPR mean
+    - What is the full form of CPR
+    - What is involved in CPR
+    - What is CPR used for
+    - Can you describe CPR
+    - What does CPR do
+    - How would you define CPR
+    - What is the goal of CPR
+    - What is the role of CPR in an emergency
+    - Why is CPR performed?
+    - What are the basics of CPR?
+    - What is CPR in first aid?
+    - What happens during CPR?
+    - What is CPR in medical terms?
+    - What is the meaning of CPR?
+    - How would you explain CPR to someone?
+    - What is the significance of CPR?
+    - What are the steps in CPR?
+    - Why do people use CPR?
+    - What is the definition of CPR?
+    - What does performing CPR involve?
+    - What are the components of CPR?
+    - What is CPR and how does it help?
+
 - intent: how_to_cpr
   examples: |
     - How to perform CPR?
