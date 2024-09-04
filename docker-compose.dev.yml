@@ -19,6 +19,12 @@ services:
     volumes:
       - ./docker/postgres:/docker-entrypoint-initdb.d
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
   analytics:
     container_name: analytics
     build:
