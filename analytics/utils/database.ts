@@ -13,15 +13,14 @@ function getDbClient() {
 }
 
 
-export async function addUserQuestion(question, answer_id) {
+export async function addUserQuestion(question: string, answer_id: number) {
 	const client = getDbClient();
 	await client.connect();
 
-	let res;
 	try {
-		res = await client.query(
+		await client.query(
 			'INSERT INTO user_questions (content, answer_id) VALUES ($1, $2)',
-			[question, answer_id]
+			[question, answer_id],
 		);
 	}
 	catch (err) {
@@ -33,10 +32,10 @@ export async function addUserQuestion(question, answer_id) {
 }
 
 
-export async function updateBotAnswerCount(answer) {
+export async function updateBotAnswerCount(answer: string) {
 	const client = getDbClient();
 	await client.connect();
-	
+
 	let res;
 	try {
 		res = await client.query('SELECT id FROM bot_answers WHERE content = $1', [answer]);
@@ -44,12 +43,13 @@ export async function updateBotAnswerCount(answer) {
 		if (res.rowCount === 0) {
 			res = await client.query(
 				'INSERT INTO bot_answers (content) VALUES ($1) RETURNING id',
-				[answer]
+				[answer],
 			);
-		} else {
+		}
+		else {
 			res = await client.query(
 				'UPDATE bot_answers SET use_count = use_count + 1 WHERE content = $1 RETURNING id',
-				[answer]
+				[answer],
 			);
 		}
 	}
