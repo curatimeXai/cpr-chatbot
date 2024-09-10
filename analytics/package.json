@@ -9,17 +9,20 @@
     "preview": "nuxi preview"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.1.205",
     "@nuxt/fonts": "^0.7.1",
     "@nuxt/icon": "^1.4.5",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@types/mime": "^4.0.0",
+    "@types/pg": "^8.11.8",
+    "mime": "^4.0.4",
+    "mime-types": "^2.1.35",
     "nuxt": "^3.12.4",
     "nuxt-security": "^2.0.0-rc.9",
     "pg": "^8.12.0",
     "preline": "^2.4.1",
     "vue": "^3.4.35",
-    "vue-router": "^4.4.2",
-    "@types/pg": "^8.11.8",
-    "@iconify-json/lucide": "^1.1.205"
+    "vue-router": "^4.4.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-module": "^4.1.0",

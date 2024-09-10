@@ -27,12 +27,9 @@ services:
 
   analytics:
     container_name: analytics
-    build:
-      context: ./analytics
+    build: ./analytics
     env_file:
       - ./docker/analytics/.env
       - ./docker/postgres/.env
     ports:
-      - "5005:5054"
-    volumes:
-      - ./analytics:/app
+      - "5005:3000"
