@@ -9,9 +9,10 @@ export default defineEventHandler(async (event) => {
 			body: body,
 		}) as { recipient_id: string, text: string}[];
 
-
-		const answer_id = await updateBotAnswerCount(chatbotResponse[0].text);
-		await addUserQuestion(body.message, answer_id);
+		if (body.analytics) {
+			const answer_id = await updateBotAnswerCount(chatbotResponse[0].text);
+			await addUserQuestion(body.message, body.conv_position, answer_id);	
+		}
 
 		return chatbotResponse;
 	}

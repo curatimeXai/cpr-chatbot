@@ -13,14 +13,14 @@ function getDbClient() {
 }
 
 
-export async function addUserQuestion(question: string, answer_id: number) {
+export async function addUserQuestion(question: string, conv_position: number, answer_id: number) {
 	const client = getDbClient();
 	await client.connect();
 
 	try {
 		await client.query(
-			'INSERT INTO user_questions (content, answer_id) VALUES ($1, $2)',
-			[question, answer_id],
+			'INSERT INTO user_questions (content, conv_position, answer_id) VALUES ($1, $2, $3)',
+			[question, conv_position, answer_id],
 		);
 	}
 	catch (err) {
