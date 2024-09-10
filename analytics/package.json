@@ -17,12 +17,12 @@
     "pg": "^8.12.0",
     "preline": "^2.4.1",
     "vue": "^3.4.35",
-    "vue-router": "^4.4.2"
+    "vue-router": "^4.4.2",
+    "@types/pg": "^8.11.8",
+    "@iconify-json/lucide": "^1.1.205"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.1.205",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@types/pg": "^8.11.8",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.0",
