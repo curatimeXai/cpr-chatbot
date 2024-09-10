@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxi build",
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --dotenv ../docker/analytics/.env",
     "generate": "nuxi generate",
     "preview": "nuxi preview"
   },
@@ -15,6 +15,7 @@
     "nuxt": "^3.12.4",
     "nuxt-security": "^2.0.0-rc.9",
     "pg": "^8.12.0",
+    "preline": "^2.4.1",
     "vue": "^3.4.35",
     "vue-router": "^4.4.2"
   },

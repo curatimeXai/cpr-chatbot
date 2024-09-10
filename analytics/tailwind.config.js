@@ -14,13 +14,17 @@ export default {
 		'src/Error.{js,ts,vue}',
 		'src/error.{js,ts,vue}',
 		'src/app.config.{js,ts}',
+		'./node_modules/preline/preline.js',
 	],
 	theme: {
 		extend: {
 			colors: {
-				primary: colors.green,
+				primary: colors.red,
 				gray: colors.zinc,
 			},
 		},
 	},
+	plugins: [
+		require('preline/plugin'),
+	],
 };

@@ -16,4 +16,6 @@ export default defineNuxtConfig({
 			crossOriginResourcePolicy: 'cross-origin',
 		},
 	},
+
+	plugins: ['~/plugins/preline.client.ts'],
 });

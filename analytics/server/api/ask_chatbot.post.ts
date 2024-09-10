@@ -4,7 +4,7 @@ import { addUserQuestion, updateBotAnswerCount } from '~/utils/database';
 export default defineEventHandler(async (event) => {
 	try {
 		const body = await readBody(event);
-		const chatbotResponse = await $fetch('http://rasa:5005/webhooks/rest/webhook', {
+		const chatbotResponse = await $fetch(process.env.CHATBOT_API_URL as string, {
 			method: 'POST',
 			body: body,
 		}) as { recipient_id: string, text: string}[];
