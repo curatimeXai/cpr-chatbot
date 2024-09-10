@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
 		const answer_id = await updateBotAnswerCount(chatbotResponse[0].text);
 		await addUserQuestion(body.message, answer_id);
 
-		return chatbotResponse[0];
+		return chatbotResponse;
 	}
 	catch (err) {
 		setResponseStatus(event, 500);
