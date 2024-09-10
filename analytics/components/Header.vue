@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const links = [{
 	label: 'Home',
-	to: '/',
+	to: '/chatbot/analytics/',
 	icon: 'lucide:house',
 }, {
 	label: 'Help',
-	to: '/help',
+	to: '/chatbot/analytics/help',
 	icon: 'lucide:circle-help',
 }];
 
