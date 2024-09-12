@@ -82,6 +82,40 @@ nlu:
     - What do you do?
     - What’s your main job?
     - What are you programmed to do?
+  
+- intent: what_is_cardiac_arrest
+  examples: |
+    - What is a cardiac arrest?
+    - What is cardiac arrest?
+    - Can you explain what cardiac arrest is?
+    - What happens during a cardiac arrest?
+    - Define cardiac arrest
+    - What does cardiac arrest mean?
+    - What occurs in a cardiac arrest?
+    - How does cardiac arrest happen?
+    - What is the definition of cardiac arrest?
+    - What are the symptoms of cardiac arrest?
+    - How would you describe cardiac arrest?
+    - What causes cardiac arrest?
+    - What is the medical term for cardiac arrest?
+    - What is the difference between a heart attack and cardiac arrest?
+    - What is the meaning of cardiac arrest?
+    - What leads to cardiac arrest?
+    - What are the signs of cardiac arrest?
+    - How does cardiac arrest affect the body?
+    - What happens to the heart during cardiac arrest?
+    - What is the impact of cardiac arrest?
+    - How serious is a cardiac arrest?
+    - What is a cardiac arrest and how does it occur?
+    - Why does cardiac arrest happen?
+    - Can you define cardiac arrest?
+    - What is the main cause of cardiac arrest?
+    - What is sudden cardiac arrest?
+    - What happens if someone has a cardiac arrest?
+    - What does it mean to have a cardiac arrest?
+    - What exactly is cardiac arrest?
+    - How does cardiac arrest differ from a heart attack?
+    - What are the consequences of cardiac arrest?
 
 - intent: symptoms
   examples: |
@@ -292,6 +326,12 @@ nlu:
     - Method for doing CPR
     - What are the CPR procedures?
     - How to help someone with CPR?
+    - How long do I have to do CPR?
+    - How long should CPR be performed?
+    - When should I stop doing CPR?
+    - How many minutes should I perform CPR?
+    - How long is CPR done for?
+    - How long to continue CPR?
   
 - intent: how_to_mouth_to_mouth
   examples: |

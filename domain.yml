@@ -4,6 +4,7 @@ intents:
   - greet
   - thank_you
   - what_can_do
+  - what_is_cardiac_arrest
   - symptoms
   - how_to_react
   - what_are_emergency_numbers
@@ -17,13 +18,19 @@ intents:
 
 responses:
   utter_please_rephrase:
-  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+  - text: "I'm sorry, I didn't quite understand that. Please ask questions related to CPR and first aid gestures during cardiac arrest."
 
   utter_greet:
   - text: "Hey! I'm a chatbot that can answer questions about CPR, how to do it, what are the benefits of doing it, etc."
 
   utter_thank_back:
   - text: "You're welcome! I'm glad I could help you!"
+
+  utter_explanation_cardiac_arrest:
+  - text: "Cardiac arrest is a sudden loss of heart function, causing the heart to stop beating effectively. 
+    This leads to a lack of blood flow to the brain and other vital organs, making it a life-threatening 
+    emergency that requires immediate medical intervention. Failing to get immediate medical intervention 
+    leads to first, irreparable brain damage and then to death."
 
   utter_symptoms_description_one:
   - text: "A cardiac arrest can sometimes be detected before it happens. 
