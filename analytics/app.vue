@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-	title: 'CPR-CA',
+	title: 'CPRC Analytics',
 	meta: [
 		{ name: 'description', content: 'CPR Chatbot Analytics is a website that provides analytics on the use of the CPR Chatbot from Nightingale.' },
 	],
