@@ -35,6 +35,10 @@ Example commands:
 - Clone the repository: `git clone https://github.com/curatimeXai/cpr-chatbot.git`.  
 - Create the `.env` files in the `docker` subfolders based on the examples.  
 
+**Analytics environment:**  
+A `.env.dev` file is already present in the `analytics` folder.  
+This file's variables values must be the same as the ones in the `docker/` env files. 
+
 **Python environment (only for chatbot development):**  
 - Create a virtual environment: `python -m venv venv`
 - Enable the virtual environment:
