@@ -23,6 +23,13 @@ They are accessible on the main page of the website `host:5005/` and display the
 ## Development
 **Disclaimer:** you python version needs to be one of the followings to develop the chatbot: `3.8`, `3.9`, `3.10`.  
 
+Use the `docker-compose.dev.yml` instead of the regular docker compose when developing.  
+It opens the database to develop the analytics website locally and start an `adminer` instance to easily check the database.  
+
+Example commands:  
+`docker compose -f docker-compose.dev.yml up -d`
+`docker compose -f docker-compose.dev.yml down`
+
 ### Environment preparation
 **Global environment:**  
 - Clone the repository: `git clone https://github.com/curatimeXai/cpr-chatbot.git`.  
@@ -60,6 +67,15 @@ You can run the `docker-compose.dev.yml` file to start the database and then run
 ### The database
 The database is a PostgreSQL instance in a docker container. It's structure can be found in the `docker/postgres/init_db.sql` file.  
 This database is not available from the public and is only available from the other containers.
+
+#### Development
+The database is accessible on the `5055` port while using the development docker compose.  
+This port was choosen to avoid potential conflicts with existing PostgreSQL instances already running on the development machine.  
+
+If necessary, you can re-initialise the database by removing its volume with the `-v` option when stopping the containers.  
+Example:  
+`docker compose -f docker-compose.dev.yml down -v`
+
 
 #### The tables
 The database contains two tables:

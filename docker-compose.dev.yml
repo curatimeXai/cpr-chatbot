@@ -16,6 +16,8 @@ services:
     shm_size: 128mb
     env_file:
       - ./docker/postgres/.env
+    ports:
+      - "5055:5432"
     volumes:
       - ./docker/postgres:/docker-entrypoint-initdb.d
 
