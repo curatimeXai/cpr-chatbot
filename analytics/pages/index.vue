@@ -2,7 +2,6 @@
 const { data: questionsCount } = await useFetch('/api/db/questions_count');
 // const questionsCount = ref(120);
 const highestConvQuestionsCount = ref(0);
-
 </script>
 
 <template>
