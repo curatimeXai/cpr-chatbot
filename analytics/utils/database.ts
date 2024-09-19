@@ -9,6 +9,7 @@ function getDbClient() {
 		password: process.env.POSTGRES_PASSWORD,
 		host: process.env.POSTGRES_HOST,
 		database: process.env.POSTGRES_USER,
+		port: process.env.POSTGRES_PORT as unknown as number,
 	});
 }
 
@@ -19,8 +20,7 @@ export async function getUsersQuestionsCount(): Promise<number> {
 	try {
 		const res = await client.query('SELECT COUNT(*) FROM user_questions;');
 		if (res.rowCount !== 0) {
-			console.log(res.rows);
-			console.log(res.rows[0]);
+			return res.rows[0].count;
 		}
 	}
 	catch (err) {

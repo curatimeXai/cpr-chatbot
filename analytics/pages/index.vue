@@ -1,9 +1,8 @@
 <script setup lang="ts">
-// const questionsCount = ref(await getUsersQuestionsCount());
-// const highestConvQuestionsCount = ref(0);
+const { data: questionsCount } = await useFetch('/api/db/questions_count');
+// const questionsCount = ref(120);
+const highestConvQuestionsCount = ref(0);
 
-const questionsCount = ref(120);
-const highestConvQuestionsCount = ref(12);
 </script>
 
 <template>
@@ -17,26 +16,24 @@ const highestConvQuestionsCount = ref(12);
 		- the number of the question in the conversation
 		- the chatbot's answer
 	-->
-	<div class="px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-12 mx-auto">
-		<div class="max-w-5xl">
-			<div class="space-y-5 md:space-y-8">
-				<div class="space-y-3">
-					<h1 class="text-4xl">Analytics</h1>
+	<div class="px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-80 mx-auto">
+		<div class="space-y-5 md:space-y-8">
+			<div class="space-y-3">
+				<h1 class="text-4xl">Analytics</h1>
 
-					<div class="max-w-[85rem] py-10 sm:px-6 lg:py-14 mx-auto">
-						<div class="flex flex-row flex-wrap gap-4 sm:gap-6">
-							<Card title="Questions asked">
-								{{ questionsCount }}
-							</Card>
+				<div class="w-full py-10 sm:px-6 lg:py-14 mx-auto">
+					<div class="flex flex-row flex-wrap justify-center gap-4 sm:gap-6">
+						<StatCard title="Questions asked">
+							{{ questionsCount }}
+						</StatCard>
 
-							<Card title="Highest conversation length">
-								{{ highestConvQuestionsCount }}
-							</Card>
-						</div>
+						<StatCard title="Highest conversation length">
+							{{ highestConvQuestionsCount }}
+						</StatCard>
 					</div>
-
-					<h2 class="text-2xl">Questions</h2>
 				</div>
+
+				<h2 class="text-2xl">Questions</h2>
 			</div>
 		</div>
 	</div>
