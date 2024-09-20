@@ -1,4 +1,5 @@
 import pg from 'pg';
+import type { QuestionType } from './types';
 
 const { Client } = pg;
 
@@ -29,6 +30,44 @@ export async function getUsersQuestionsCount(): Promise<number> {
 	}
 	await client.end();
 	return 0;
+}
+
+
+export async function getHighestConvLength(): Promise<number> {
+	const client = getDbClient();
+	await client.connect();
+
+	try {
+		const res = await client.query('SELECT conv_position FROM user_questions ORDER BY conv_position DESC LIMIT 1;');
+		if (res.rowCount !== 0) {
+			return res.rows[0].conv_position;
+		}
+	}
+	catch (err) {
+		console.log(err);
+		return 0;
+	}
+	await client.end();
+	return 0;
+}
+
+
+export async function getQuestions(): Promise<QuestionType[]> {
+	const client = getDbClient();
+	await client.connect();
+
+	try {
+		const res = await client.query(
+			`SELECT uq.id, uq.content AS content, uq.conv_position, ba.content AS answer
+			FROM user_questions uq
+			JOIN bot_answers ba ON uq.answer_id = ba.id;`,
+		);
+		return res.rows;
+	}
+	catch (err) {
+		console.log(err);
+		return [];
+	}
 }
 
 
