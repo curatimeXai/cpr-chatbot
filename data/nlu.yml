@@ -16,6 +16,12 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Hello!
+    - Hey!
+    - Good morning!
+    - How are you doing ?
+    - Hello
+    - Hey
 
 - intent: thank_you
   examples: |
