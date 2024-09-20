@@ -27,6 +27,7 @@ const { data: questions } = await useFetch('/api/db/getQuestions');
 
 				<div class="w-full py-10 sm:px-6 lg:py-14 mx-auto">
 					<div class="flex flex-row flex-wrap justify-center md:justify-normal gap-4 sm:gap-6">
+						<p v-if="!questions?.length" class="w-full text-center text-xl">No questions</p>
 						<QuestionCard v-for="quest of questions" :key="quest.id" :question="quest" />
 					</div>
 				</div>

@@ -17,10 +17,9 @@
 
 					<p class="text-lg text-gray-800">
 						The CPR Chatbot is available at the
-						<NuxtLink class="text-red-500 underline hover:no-underline"
+						<NuxtLink class="text-red-500 underline hover:no-underline white"
 							to="https://lifesaver.nightingale.uni-mainz.de/">
-							Lifesaver
-						</NuxtLink>
+							Lifesaver</NuxtLink>
 						website. You can talk with him in the <strong>Ask questions</strong> section.
 					</p>
 				</div>
