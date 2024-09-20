@@ -15,7 +15,6 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@types/pg": "^8.11.8",
     "nuxt": "^3.12.4",
-    "nuxt-security": "^2.0.0-rc.9",
     "pg": "^8.12.0",
     "preline": "^2.4.1",
     "vue": "^3.4.35",

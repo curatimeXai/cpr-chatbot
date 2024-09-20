@@ -8,14 +8,7 @@ export default defineNuxtConfig({
 		'@nuxt/fonts',
 		'@nuxtjs/tailwindcss',
 		'@nuxt/icon',
-		'nuxt-security',
 	],
-
-	security: {
-		headers: {
-			crossOriginResourcePolicy: 'cross-origin',
-		},
-	},
 
 	plugins: ['~/plugins/preline.client.ts'],
 });

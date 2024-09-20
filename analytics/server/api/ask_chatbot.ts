@@ -2,6 +2,16 @@ import { addUserQuestion, updateBotAnswerCount } from '~/utils/database';
 
 
 export default defineEventHandler(async (event) => {
+	if (event.method === 'OPTIONS') {
+		setResponseStatus(event, 204, 'No content');
+		return 'OK';
+	}
+
+	if (event.method !== 'POST') {
+		setResponseStatus(event, 404);
+		return;
+	}
+
 	try {
 		const body = await readBody(event);
 		const chatbotResponse = await $fetch(process.env.CHATBOT_API_URL as string, {
